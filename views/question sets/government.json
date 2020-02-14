@@ -1,0 +1,28 @@
+[{
+	"Government": [
+		{
+			"question": "Dept/Ministry",
+			"input": true,
+			"dropdown": false,
+			"text": false,
+			"upload": false,
+			"info": "",
+			"format": "(.*?)",
+			"title:": "Pattern regexp will match anything",
+			"answers": ["Some sort of government or Ministry"],
+			"map":[]
+		},
+		{
+			"question": "REMIT",
+			"input": true,
+			"dropdown": false,
+			"text": false,
+			"upload": false,
+			"info": "",
+			"format": "(.*?)",
+			"title:": "Pattern regexp will match anything",
+			"answers": ["Remit something, I'm not sure"],
+			"map":["contact_information"]
+		}
+	]
+}]

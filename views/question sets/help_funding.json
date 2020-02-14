@@ -1,0 +1,15 @@
+[{
+	"Help Funding": [
+		{
+			"question": "Do you need an ICO?",
+			"input": false,
+			"dropdown": true,
+			"text": false,
+			"upload": false,
+			"info": "",
+			"format": "",
+			"answers": ["yes","no"],
+			"map":["thankyou"]
+		}
+	]
+}]

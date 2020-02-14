@@ -1,0 +1,7 @@
+{
+  "hostname": "[host name]",
+  "port": "[database port number]",
+  "database": "[database name]",
+  "first_set": "[name of question set]",
+  "input_size": "medium"
+}

@@ -1,0 +1,15 @@
+[{
+	"Business Type": [
+		{
+			"question": "Business Type",
+			"input": false,
+			"dropdown": true,
+			"text": false,
+			"upload": false,
+			"info": "",
+			"format": "",
+			"answers": ["Government", "Enterprise"],
+			"map": ["government","enterprise"]
+		}
+	]
+}]

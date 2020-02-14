@@ -1,0 +1,26 @@
+{
+  "name": "kyc_app",
+  "version": "1.0.0",
+  "description": "A small know your customer app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kyc",
+    "know",
+    "your",
+    "customer"
+  ],
+  "author": "Isagani Esteron",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "mime-types": "^2.1.26",
+    "mongodb": "^3.5.3",
+    "multer": "^1.4.2",
+    "pug": "^2.0.4"
+  }
+}

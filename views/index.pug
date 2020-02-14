@@ -1,0 +1,58 @@
+//- index.pug
+doctype html
+html
+	head
+		meta(name='viewport', content='width=device=width, initial-scale=1.0')
+		title KYC APP
+		style
+			include styling.css
+	body
+		div#holder
+			div#page
+				div#header.site-header
+					div.wrap
+						div#branding(role='banner')
+							p.site-description KYC APP
+			div#main
+				div#primary
+
+					div.parent
+						h1.heading= name
+						form#form(action = '/', method = 'POST', encType='multipart/form-data')
+							div.child
+								input(type = 'hidden' name = 'customer_id', value= customer_id)
+								input(type = 'hidden' name = 'question_set', value= name)
+							each val, index in q
+								div.inset.hidden
+									label.question= (index+1) + ". " + val.question
+									br
+									label.info= val.info
+									br
+									br
+									if val.input 
+										input.text(name= val.question value= val.answers[0] pattern= val.format title= val.title required)
+										br
+										label.alert
+									if val.dropdown
+										each val2 in val.answers
+											label.container= val2
+												input(type = 'radio', name= val.question, checked= 'checked',value= val2)
+												span.checkmark
+											br
+									if val.text
+										textarea(name= val.question)= val.question
+										br
+										label.alert
+									if(val.upload)
+										input(type = 'file' name= val.question)
+									br
+						
+							div.child
+								button#prev.hidden(type = "button") Previous
+								button#nex.hidden(type = "button") Next
+								button#sub.hidden(type = "submit") Submit
+
+			script.
+				size_size="#{settings}"
+			script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+			script(src='/script.js')

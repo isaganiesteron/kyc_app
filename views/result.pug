@@ -1,0 +1,36 @@
+//- result.pug
+doctype html
+html
+	head
+		meta(name='viewport', content='width=device=width, initial-scale=1.0')
+		title KYC APP
+		style
+			include styling.css
+	body
+		div#holder
+			div#page
+				div#header.site-header
+					div.wrap
+						div#branding(role='banner')
+							p.site-description KYC APP
+			div#main
+				div#primary
+					table
+						tr
+							th Customer ID
+							th Country
+							th Time
+							th Tables
+						each val1, index1 in result.customers
+							tr
+								td= val1.customer
+								td= val1.Country
+								td= val1.timestamp
+								td
+									each val2, index2 in result.tables
+										li
+											a(href='/data?id=' + val1.customer + '&table=' + val2 target='_blank') #{val2}
+					
+
+			script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+			script(src='/script.js')

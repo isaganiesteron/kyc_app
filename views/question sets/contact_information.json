@@ -1,0 +1,51 @@
+[{
+	"Contact Information": [{
+			"question": "Website",
+			"input": true,
+			"dropdown": false,
+			"text": false,
+			"upload": false,
+			"info": "Enter your website",
+			"format": ".{1,}.com",
+			"title": "Format must be, so and so e.g google.com",
+			"answers": ["google.com"],
+			"map": []
+		},
+		{
+			"question": "Facebook Account",
+			"input": true,
+			"dropdown": false,
+			"text": false,
+			"upload": false,
+			"info": "Contact Information",
+			"format": "(.*?)",
+			"title:": "Pattern regexp will match anything",
+			"answers": ["facebook"],
+			"map": []
+		},
+		{
+			"question": "Twitter Account",
+			"input": true,
+			"dropdown": false,
+			"text": false,
+			"upload": false,
+			"info": "Contact Information",
+			"format": "(.*?)",
+			"title:": "Pattern regexp will match anything",
+			"answers": ["twitter"],
+			"map": []
+		},
+		{
+			"question": "Deposit",
+			"input": false,
+			"dropdown": true,
+			"text": false,
+			"upload": false,
+			"info": "Are you willing to  commit to a $10,000 non refundable deposit (deductable from any future fees) if you are successful in securing a consulting contract?",
+			"format": "(.*?)",
+			"title:": "Pattern regexp will match anything",
+			"answers": ["no", "yes"],
+			"map": ["thankyou", "project_information"]
+		}
+	]
+}]

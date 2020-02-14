@@ -1,0 +1,32 @@
+//- menu.pug
+doctype html
+html
+	head
+		meta(name='viewport', content='width=device=width, initial-scale=1.0')
+		title Customer 
+		style
+			include styling.css
+	body
+		div#holder
+			div#page
+				div#header.site-header
+					div.wrap
+						div#branding(role='banner')
+							p.site-description KYC APP
+			div#main
+				div#primary
+					h1 Customer ID: #{menu.ID}
+					
+					table
+						each val, index in menu.collection
+							tr
+								td= val
+								td
+									a(href='/table?id=' + menu.ID + '&table=' + val target='_blank') See Table
+					
+				
+				
+					
+
+			script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+			script(src='/script.js')

@@ -1,0 +1,28 @@
+[{
+	"Enterprise": [
+		{
+			"question": "Type",
+			"input": false,
+			"dropdown": true,
+			"text": false,
+			"upload": false,
+			"info": "",
+			"format": "",
+			"title:": "Invalid Format.",
+			"answers": ["Company", "Corporation","SME","Start up","Individual"],
+			"map":[]
+		},
+		{
+			"question": "Track Record",
+			"input": false,
+			"dropdown": false,
+			"text": true,
+			"upload": false,
+			"info": "",
+			"format": "(.*?)",
+			"title:": "Pattern regexp will match anything",
+			"answers": ["Track record, not sure here."],
+			"map":["contact_information"]
+		}
+	]
+}]

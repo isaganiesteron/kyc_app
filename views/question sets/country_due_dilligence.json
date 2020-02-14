@@ -1,0 +1,16 @@
+[{
+	"Country Due Dilligence": [
+		{
+			"question": "Country",
+			"input": false,
+			"dropdown": true,
+			"text": false,
+			"upload": false,
+			"info": "****For testing: Philippines is not sanctioned",
+			"format": "",
+			"title:": "",
+			"answers": ["Thailand", "Philippines", "Singapore"],
+			"map": ["business_type","thankyou","business_type"]
+		}
+	]
+}]
