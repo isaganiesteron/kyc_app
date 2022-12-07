@@ -15,8 +15,8 @@
   "author": "Isagani Esteron",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "express-fileupload": "^1.1.6",
     "mime-types": "^2.1.26",
     "mongodb": "^3.5.3",
